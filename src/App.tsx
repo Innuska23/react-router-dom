@@ -7,11 +7,13 @@ import { Model } from './components/pages/model';
 
 import styles from "./components/Site.module.css";
 import { S } from './components/pages/_styles';
+import { Prices } from './components/pages/Prices';
 
 const PATH = {
     ADIDAS: '/adidas',
     PUMA: '/puma',
     ABIBAS: '/abibas',
+    PRICES: '/prices'
 } as const;
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
                     <S.NavWrapper><NavLink to={PATH.ADIDAS}>ADIDAS</NavLink></S.NavWrapper>
                     <S.NavWrapper><NavLink to={PATH.PUMA}>PUMA</NavLink></S.NavWrapper>
                     <S.NavWrapper><NavLink to={PATH.ABIBAS}>ABIBAS</NavLink></S.NavWrapper>
+                    <S.NavWrapper><NavLink to={PATH.PRICES}>PRICES</NavLink></S.NavWrapper>
                 </div>
 
                 <div className={styles.content}>
@@ -33,6 +36,7 @@ function App() {
                         <Route path={PATH.ADIDAS} element={<Adidas />} />
                         <Route path={PATH.PUMA} element={<Puma />} />
                         <Route path={PATH.ABIBAS} element={<Abibas />} />
+                        <Route path={PATH.PRICES} element={<Prices />} />
                         <Route path={'/:model/:id'} element={<Model />} />
                         <Route path={'/*'} element={<Error404 />} />
                     </Routes>
