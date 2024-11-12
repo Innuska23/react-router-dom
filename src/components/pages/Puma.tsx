@@ -36,7 +36,7 @@ export const pumaArr: PumaItem[] = [
     }
 ]
 
-export const Puma = () => {
+const Puma = () => {
     return (
         <div>
 
@@ -85,3 +85,4 @@ export const Puma = () => {
     );
 };
 
+export default Puma;

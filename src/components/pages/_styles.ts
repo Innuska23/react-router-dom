@@ -17,9 +17,8 @@ const NavWrapper = styled.div`
   & > a:hover {
     color: steelblue; /* Цвет ссылки */
   }
-`
+`;
 
-
-export const S={
-    NavWrapper,
-  }
+export const S = {
+  NavWrapper,
+};

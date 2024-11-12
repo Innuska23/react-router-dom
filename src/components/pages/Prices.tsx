@@ -10,7 +10,8 @@ type Sneaker = {
 };
 
 type Props = {};
-export const Prices = (props: Props) => {
+
+const Prices = (props: Props) => {
     let [searchParams, setSearchParams] = useSearchParams();
 
     const sneakers: Sneaker[] = useMemo(() => [
@@ -93,3 +94,5 @@ export const Prices = (props: Props) => {
         </div>
     );
 };
+
+export default Prices;
