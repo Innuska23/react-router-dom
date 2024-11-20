@@ -8,6 +8,7 @@ const PATH = {
   PUMA: "/puma",
   ABIBAS: "/abibas",
   PRICES: "/prices",
+  PROTECTEDPAGE: '/protectedpage'
 } as const;
 
 function App() {
@@ -30,6 +31,9 @@ function App() {
           </S.NavWrapper>
           <S.NavWrapper>
             <NavLink to={PATH.PRICES}>PRICES</NavLink>
+          </S.NavWrapper>
+          <S.NavWrapper>
+            <NavLink to={PATH.PROTECTEDPAGE}>PROTECTED PAGE</NavLink>
           </S.NavWrapper>
         </div>
 
