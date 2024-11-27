@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/react-router-dom/static/css/main.4324ec80.css",
+    "main.js": "/react-router-dom/static/js/main.7cf091db.js",
+    "static/js/453.37d24069.chunk.js": "/react-router-dom/static/js/453.37d24069.chunk.js",
+    "static/js/462.bb177ced.chunk.js": "/react-router-dom/static/js/462.bb177ced.chunk.js",
+    "static/css/691.ab4df655.chunk.css": "/react-router-dom/static/css/691.ab4df655.chunk.css",
+    "static/js/691.c1557513.chunk.js": "/react-router-dom/static/js/691.c1557513.chunk.js",
+    "static/media/krossovki-puma-trinity-mid-hybrid-leather-393985-02-3-1000x800.jpg": "/react-router-dom/static/media/krossovki-puma-trinity-mid-hybrid-leather-393985-02-3-1000x800.9f97347aa4aedf5ce8f2.jpg",
+    "static/media/kedy-puma-suede-classic-xxi-374915-01-20-1000x800.jpg": "/react-router-dom/static/media/kedy-puma-suede-classic-xxi-374915-01-20-1000x800.5b62a6099201ef0f591c.jpg",
+    "static/media/krossovki-puma-trinity-open-road-393361-02-3-1000x800.jpg": "/react-router-dom/static/media/krossovki-puma-trinity-open-road-393361-02-3-1000x800.af679ec3b38dc2d08574.jpg",
+    "static/media/PostMove_Mid_Cloudfoam_Super_Lifestyle_Basketball_Mid_Classic_Shoes_Black_GY7163_01_standard.webp": "/react-router-dom/static/media/PostMove_Mid_Cloudfoam_Super_Lifestyle_Basketball_Mid_Classic_Shoes_Black_GY7163_01_standard.4c2aceb4853292b5eab9.webp",
+    "static/media/AdiFOM_TRXN_Shoes_Black_IG7453_01_standard.webp": "/react-router-dom/static/media/AdiFOM_TRXN_Shoes_Black_IG7453_01_standard.b43badfb5bc18129337b.webp",
+    "static/media/Superstar_XLG_Shoes_Black_IG9777_01_standard.webp": "/react-router-dom/static/media/Superstar_XLG_Shoes_Black_IG9777_01_standard.bfcb34a2e48044d7f26f.webp",
+    "index.html": "/react-router-dom/index.html",
+    "main.4324ec80.css.map": "/react-router-dom/static/css/main.4324ec80.css.map",
+    "main.7cf091db.js.map": "/react-router-dom/static/js/main.7cf091db.js.map",
+    "453.37d24069.chunk.js.map": "/react-router-dom/static/js/453.37d24069.chunk.js.map",
+    "462.bb177ced.chunk.js.map": "/react-router-dom/static/js/462.bb177ced.chunk.js.map",
+    "691.ab4df655.chunk.css.map": "/react-router-dom/static/css/691.ab4df655.chunk.css.map",
+    "691.c1557513.chunk.js.map": "/react-router-dom/static/js/691.c1557513.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4324ec80.css",
+    "static/js/main.7cf091db.js"
+  ]
+}
