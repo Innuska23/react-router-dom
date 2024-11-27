@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-router-dom/static/css/main.4324ec80.css",
-    "main.js": "/react-router-dom/static/js/main.7cf091db.js",
+    "main.js": "/react-router-dom/static/js/main.ce7b47ae.js",
     "static/js/453.37d24069.chunk.js": "/react-router-dom/static/js/453.37d24069.chunk.js",
     "static/js/462.bb177ced.chunk.js": "/react-router-dom/static/js/462.bb177ced.chunk.js",
     "static/css/691.ab4df655.chunk.css": "/react-router-dom/static/css/691.ab4df655.chunk.css",
@@ -14,7 +14,7 @@
     "static/media/Superstar_XLG_Shoes_Black_IG9777_01_standard.webp": "/react-router-dom/static/media/Superstar_XLG_Shoes_Black_IG9777_01_standard.bfcb34a2e48044d7f26f.webp",
     "index.html": "/react-router-dom/index.html",
     "main.4324ec80.css.map": "/react-router-dom/static/css/main.4324ec80.css.map",
-    "main.7cf091db.js.map": "/react-router-dom/static/js/main.7cf091db.js.map",
+    "main.ce7b47ae.js.map": "/react-router-dom/static/js/main.ce7b47ae.js.map",
     "453.37d24069.chunk.js.map": "/react-router-dom/static/js/453.37d24069.chunk.js.map",
     "462.bb177ced.chunk.js.map": "/react-router-dom/static/js/462.bb177ced.chunk.js.map",
     "691.ab4df655.chunk.css.map": "/react-router-dom/static/css/691.ab4df655.chunk.css.map",
@@ -22,6 +22,6 @@
   },
   "entrypoints": [
     "static/css/main.4324ec80.css",
-    "static/js/main.7cf091db.js"
+    "static/js/main.ce7b47ae.js"
   ]
 }
