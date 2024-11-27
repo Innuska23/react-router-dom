@@ -1,6 +1,8 @@
+import s from "../Site.module.css";
+
 const Abibas = () => {
   return (
-    <div>
+    <div className={s.textContent}>
       <h2>ABIBAS</h2>
       <p>
         What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing

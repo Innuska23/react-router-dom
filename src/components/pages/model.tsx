@@ -1,10 +1,13 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 import { adidasArr, AdidasItem } from "./Adidas";
 import { pumaArr, PumaItem } from "./Puma";
 
+import { S } from "./model.styled";
+
 export const Model = () => {
   const { model, id } = useParams<{ model: string; id: string }>();
+  const navigate = useNavigate();
 
   const normalizedModel = model?.replace("/", "");
 
@@ -18,25 +21,33 @@ export const Model = () => {
   };
 
   if (!normalizedModel || !crossModels[normalizedModel]) {
-    return <p>Invalid model</p>;
+    return (
+      <S.Container>
+        <S.Message>Invalid model</S.Message>
+        <S.Button onClick={() => navigate("/")}>Go Back to Home</S.Button>
+      </S.Container>
+    );
   }
 
   const currentModel = crossModels[normalizedModel].find(
-    (item) => item.id === Number(id)
+    (item) => item.id === Number(id),
   );
 
   return (
-    <div>
+    <S.Container>
       {currentModel ? (
         <>
-          <h2>{currentModel.model}</h2>
-          <h4>{currentModel.collection}</h4>
-          <h4>{currentModel.price}</h4>
-          <img src={currentModel.picture} alt={currentModel.model} />
+          <S.Title>{currentModel.model}</S.Title>
+          <S.Subtitle>{currentModel.collection}</S.Subtitle>
+          <S.Subtitle>{currentModel.price}</S.Subtitle>
+          <S.Image src={currentModel.picture} alt={currentModel.model} />
         </>
       ) : (
-        <p>Model not found</p>
+        <>
+          <S.Message>Model not found</S.Message>
+          <S.Button onClick={() => navigate("/")}>Go Back to Home</S.Button>
+        </>
       )}
-    </div>
+    </S.Container>
   );
 };

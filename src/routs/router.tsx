@@ -1,5 +1,10 @@
 import * as React from "react";
-import { createBrowserRouter, Navigate, Outlet, RouteObject } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Navigate,
+  Outlet,
+  RouteObject,
+} from "react-router-dom";
 
 import App from "../App";
 import { Error404 } from "../components/pages/Error404";
@@ -18,23 +23,14 @@ const PATH = {
   ABIBAS: "/abibas",
   PRICES: "/prices",
   MODEL: "/:model/:id",
-  ERROR: '/error',
-  PROTECTEDPAGE: '/protectedpage'
+  ERROR: "/error",
+  PROTECTEDPAGE: "/protectedpage",
 } as const;
-
 
 export const PrivateRoutes = () => {
   const isAuth = true;
-  return (
-    <div>
-      {isAuth
-        ? <Outlet />
-        : <Login />
-      }
-    </div>
-  )
-}
-
+  return <div>{isAuth ? <Outlet /> : <Login />}</div>;
+};
 
 const publicRoutes: RouteObject[] = [
   {
@@ -85,7 +81,7 @@ const publicRoutes: RouteObject[] = [
       </React.Suspense>
     ),
   },
-]
+];
 
 const privateRoutes: RouteObject[] = [
   {
@@ -96,7 +92,7 @@ const privateRoutes: RouteObject[] = [
       </React.Suspense>
     ),
   },
-]
+];
 
 export const router = createBrowserRouter([
   {
@@ -105,11 +101,14 @@ export const router = createBrowserRouter([
     errorElement: <Navigate to={PATH.ERROR} />,
     children: [
       {
+        index: true,
+        element: <Navigate to={PATH.ADIDAS} replace />,
+      },
+      {
         element: <PrivateRoutes />,
-        children: privateRoutes
+        children: privateRoutes,
       },
       ...publicRoutes,
-
     ],
   },
 ]);

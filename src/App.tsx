@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useNavigate } from "react-router-dom";
 
 import styles from "./components/Site.module.css";
 import { S } from "./components/pages/_styles";
@@ -8,10 +8,16 @@ const PATH = {
   PUMA: "/puma",
   ABIBAS: "/abibas",
   PRICES: "/prices",
-  PROTECTEDPAGE: '/protectedpage'
+  PROTECTEDPAGE: "/protectedpage",
 } as const;
 
 function App() {
+  const navigate = useNavigate();
+
+  const navigateHandler = () => {
+    navigate(-1);
+  };
+
   return (
     <div>
       <div className={styles.header}>
@@ -38,16 +44,20 @@ function App() {
         </div>
 
         <div className={styles.content}>
+          <div className={styles.HorizontalNavigation}>
+            <NavLink
+              to={PATH.ADIDAS}
+              role="button"
+              className={styles.LinkLikeButton}
+            >
+              Go to main page = Adidas
+            </NavLink>
+            <button onClick={navigateHandler} className={styles.ButtonLikeLink}>
+              {" "}
+              Go back
+            </button>
+          </div>
           <Outlet />
-          {/* <Routes>
-                        <Route path={'/'} element={<Navigate to={PATH.ADIDAS} />} />
-                        <Route path={PATH.ADIDAS} element={<Adidas />} />
-                        <Route path={PATH.PUMA} element={<Puma />} />
-                        <Route path={PATH.ABIBAS} element={<Abibas />} />
-                        <Route path={PATH.PRICES} element={<Prices />} />
-                        <Route path={'/:model/:id'} element={<Model />} />
-                        <Route path={'/*'} element={<Error404 />} />
-                    </Routes> */}
         </div>
       </div>
 

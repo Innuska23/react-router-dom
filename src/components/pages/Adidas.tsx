@@ -4,6 +4,8 @@ import adidasModel3 from "./../../assets/adidas/PostMove_Mid_Cloudfoam_Super_Lif
 
 import { Link } from "react-router-dom";
 
+import s from "../Site.module.css";
+
 export type AdidasItem = {
   id: number;
   model: string;
@@ -37,13 +39,13 @@ export const adidasArr: AdidasItem[] = [
 
 const Adidas = () => {
   return (
-    <div>
-      <div style={{ display: "flex", gap: "10px", justifyContent: "center" }}>
+    <div className={s.textCcontent}>
+      <div className={s.imageContainer}>
         {adidasArr.map((item, index) => {
           return (
             <Link key={index} to={`/adidas/${item.id}`}>
               <img
-                style={{ width: "350px", height: "350px" }}
+                className={s.productImage}
                 src={item.picture}
                 alt={item.model}
               />
@@ -51,7 +53,6 @@ const Adidas = () => {
           );
         })}
       </div>
-
       <h2 style={{ textAlign: "center" }}> ADIDAS</h2>
       <p>
         What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
